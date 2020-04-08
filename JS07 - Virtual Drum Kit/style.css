@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+}
+
+.wrapper {
+    padding: 5em 8em;
+    width: 100%;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1553406624-739b610cf5c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80') no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.wrapper .text {
+    font-size: 1.5em;
+    margin-bottom: 5em;
+}
+
+.wrapper .text h1, .wrapper .text p {
+    color: white;
+    text-align: center;
+    margin: 0;
+    text-shadow: 3px 3px 10px #000;
+    letter-spacing: 2px;
+}
+
+.wrapper .text p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.keyboard {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.keyboard .row {
+    display: -webkit-box;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.keyboard .key {
+    color: #161415;
+    text-align: center;
+    width: 5em;
+    height: 5em;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba( 0, 0, 0, 0.5);
+    margin: .5em;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-transition: .05s linear;
+    transition: .05s linear;
+}
+
+.keyboard .key p {
+    margin: 0 0 .3em 0;
+    font-weight: 700;
+}
+
+.keyboard .key p:first-child {
+    font-size: 2em;
+}
+
+.keyboard .key p:last-child {
+    font-size: .8em;
+    color: blue;
+}
+
+.playing {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 0 5px blue !important;
+    border: 2px solid blue;
+}

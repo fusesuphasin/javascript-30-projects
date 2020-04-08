@@ -1,0 +1,42 @@
+body, html {
+    background: #1b1e23;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4em;
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+.progress {
+    height: 10px;
+    background: #111;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.progress__highlight {
+    transition: width 0.15s linear;
+    background: #4b9aaa;
+    height: 100%;
+    width: 0%;
+}

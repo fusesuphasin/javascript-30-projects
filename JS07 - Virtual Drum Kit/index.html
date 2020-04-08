@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Drum Kit</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="text">
+            <h1>Virtual Drum Kit</h1>
+        </div>
+
+        <div class="keyboard">
+            <div class="left">
+                    <div class="row">
+                        <div data-key="81" class="key">
+                            <p>Q</p>
+                            <p>hi-hat</p>
+                        </div>
+                        <div data-key="87" class="key">
+                            <p>W</p>
+                            <p>kick</p>
+                        </div>
+                        <div data-key="69" class="key">
+                            <p>E</p>
+                            <p>openhat</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div data-key="65" class="key">
+                            <p>A</p>
+                            <p>boom</p>
+                        </div>
+                        <div data-key="83" class="key">
+                            <p>S</p>
+                            <p>snare</p>
+                        </div>
+                        <div data-key="68" class="key">
+                            <p>D</p>
+                            <p>clap</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div data-key="90" class="key">
+                            <p>Z</p>
+                            <p>ride</p>
+                        </div>
+                        <div data-key="88" class="key">
+                            <p>X</p>
+                            <p>tom</p>
+                        </div>
+                        <div data-key="67" class="key">
+                            <p>C</p>
+                            <p>tink</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="right">
+                    <div class="row">
+                        <div data-key="73" class="key">
+                            <p>I</p>
+                            <p>openhat</p>
+                        </div>
+                        <div data-key="79" class="key">
+                            <p>O</p>
+                            <p>snare</p>
+                        </div>
+                        <div data-key="80" class="key">
+                            <p>P</p>
+                            <p>hi-hat</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div data-key="74" class="key">
+                            <p>J</p>
+                            <p>boom</p>
+                        </div>
+                        <div data-key="75" class="key">
+                            <p>K</p>
+                            <p>kick</p>
+                        </div>
+                        <div data-key="76" class="key">
+                            <p>L</p>
+                            <p>clap</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div data-key="78" class="key">
+                            <p>N</p>
+                            <p>ride</p>
+                        </div>
+                        <div data-key="77" class="key">
+                            <p>M</p>
+                            <p>tom</p>
+                        </div>
+                        <div data-key="188" class="key">
+                            <p>&#60;</p>
+                            <p>tink</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio data-key="68" src="http://avclark.com/js-experiments/js-drum-kit/sounds/clap.wav"></audio>
+    <audio data-key="81" src="http://avclark.com/js-experiments/js-drum-kit/sounds/hihat.wav"></audio>
+    <audio data-key="87" src="http://avclark.com/js-experiments/js-drum-kit/sounds/kick.wav"></audio>
+    <audio data-key="69" src="http://avclark.com/js-experiments/js-drum-kit/sounds/openhat.wav"></audio>
+    <audio data-key="65" src="http://avclark.com/js-experiments/js-drum-kit/sounds/boom.wav"></audio>
+    <audio data-key="90" src="http://avclark.com/js-experiments/js-drum-kit/sounds/ride.wav"></audio>
+    <audio data-key="83" src="http://avclark.com/js-experiments/js-drum-kit/sounds/snare.wav"></audio>
+    <audio data-key="88" src="http://avclark.com/js-experiments/js-drum-kit/sounds/tom.wav"></audio>
+    <audio data-key="67" src="http://avclark.com/js-experiments/js-drum-kit/sounds/tink.wav"></audio>
+
+
+    <audio data-key="76" src="http://avclark.com/js-experiments/js-drum-kit/sounds/clap.wav"></audio>
+    <audio data-key="80" src="http://avclark.com/js-experiments/js-drum-kit/sounds/hihat.wav"></audio>
+    <audio data-key="75" src="http://avclark.com/js-experiments/js-drum-kit/sounds/kick.wav"></audio>
+    <audio data-key="73" src="http://avclark.com/js-experiments/js-drum-kit/sounds/openhat.wav"></audio>
+    <audio data-key="74" src="http://avclark.com/js-experiments/js-drum-kit/sounds/boom.wav"></audio>
+    <audio data-key="78" src="http://avclark.com/js-experiments/js-drum-kit/sounds/ride.wav"></audio>
+    <audio data-key="79" src="http://avclark.com/js-experiments/js-drum-kit/sounds/snare.wav"></audio>
+    <audio data-key="77" src="http://avclark.com/js-experiments/js-drum-kit/sounds/tom.wav"></audio>
+    <audio data-key="188" src="http://avclark.com/js-experiments/js-drum-kit/sounds/tink.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
