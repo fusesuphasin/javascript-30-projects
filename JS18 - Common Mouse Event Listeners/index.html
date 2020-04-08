@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Mouse Event Listeners</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Common Mouse Event Listeners</h1>
+
+    <div class="event-listeners">
+
+        <button id="click">Click Here</button>
+        <pre>
+            <code id="click-code">
+                const click = document.querySelect("#click");
+                click.addEventListener("click", function() {
+                    clickCode.style.display = "block";
+                });
+            </code>
+        </pre>
+        <button id="dbclick">Double Click Here</button>
+        <pre>
+            <code id="dbclick-code">
+                const dbclick = document.querySelect("#dbclick");
+                dbclick.addEventListener("dbclick", function() {
+                    dbclick.style.display = "block";
+                });
+            </code>
+        </pre>
+        <button id="contextmenu">Right Click Here</button>
+        <pre>
+            <code id="contextmenu-code">
+                const contextmenu = document.querySelect("#contextmenu");
+                contextmenu.addEventListener("contextmenu", function(e) {
+                    contextmenu.style.display = "block";
+                    e.preventDefault();
+                });
+            </code>
+        </pre>
+        <button id="mouseover">Move Mouse Over Here</button>
+        <pre>
+            <code id="mouseover-code">
+                const mouseover = document.querySelect("#mousover");
+                    mouseover.addEventListener("mouseover", function() {
+                    mouseoverCode.style.display = "block";
+                });
+            </code>
+        </pre>
+        <button id="mouseleave">Move Mouse Here and Leave</button>
+        <pre>
+            <code id="mouseleave-code">
+                const mouseleave = document.querySelect("#mouseleave");
+                    mouseleave.addEventListener("mouseleave", function() {
+                    mouseleaveCode.style.display = "block";
+                });
+            </code>
+        </pre>
+        <button id="wheel">Scroll the Mouse Wheel Here</button>
+        <pre>
+            <code id="wheel-code">
+                const wheel = document.querySelect("#wheel");
+                    wheel.addEventListener("wheel", function() {
+                    wheelCode.style.display = "block";
+                });
+            </code>
+        </pre>
+        <textarea id="select">Select this text</textarea>
+        <pre>
+            <code id="select-code">
+                const select = document.querySelector("#select");
+                    select.addEventListener("select", function() {
+                        selectCode.style.display = "block";
+                    });
+            </code>
+        </pre>
+
+        <button id="reset">Reset All</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
