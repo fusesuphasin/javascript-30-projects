@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Overlay</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <a href="#" class="search-trigger full-screen-trigger" id="search-button-listener" style="display: table-cell; padding: 0 30px 0 20px; vertical-align: middle;">
+            <div id="search-button">
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+
+        <div class="fullscreen-search-overlay" id="search-overlay">
+            <a href="#" class="fullscreen-close" id="fullscreen-close-button">
+                <i class="fa fa-times"></i>
+            </a>
+            <div id="fullscreen-search-wrapper">
+                <form action="" id="fullscreen-searchform">
+                    <input type="text" value="" placeholder="Search..." id="fullscreen-search-input">
+                    <i class="fa fa-search fullscreen-search-icon"><input type="submit" value=""></i>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

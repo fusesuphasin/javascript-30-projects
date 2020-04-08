@@ -1,0 +1,177 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1440&q=80') center no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.search-trigger {
+    position: absolute;
+    top: 47%;
+    left: 47%;
+}
+
+/* Search Overlay */
+.fullscreen-search-overlay #fullscreen-search-wrapper #fullscreen-searchform input[type="submit"] {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    right: 0;
+    top: 0;
+}
+#fullscreen-search-form:focus {
+    outline: none;
+    border: none;
+}
+
+.fullscreen-search-overlay #fullscreen-search-wrapper #fullscreen-searchform .fullscreen-search-icon {
+    font-size: 25px;
+    position: absolute;
+    right: 15px;
+    width: 25px;
+    top: 30px;
+    color: #fff;
+    color: rgba(255, 255, 255, .2);
+    transition: all .2s ease-out;
+}
+.fullscreen-search-icon:hover,
+.fullscreen-search-icon:focus {
+    border: none;
+    outline: none;
+    color: #fff !important;
+    transition: transform ease-out .2s;
+    transform: rotate(180deg);
+}
+#fullscreen-searchform {
+    position: relative;
+    vertical-align: middle;
+}
+
+.fullscreen-search-overlay #fullscreen-search-wrapper #fullscreen-searchform #fullscreen-search-input {
+    width: 800px;
+    background-color: transparent;
+    box-shadow: 0 3px 0 0 rgba(255, 255, 255, .1);
+    border: 0;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    color: #fff;
+    transition: all .3s ease-out;
+}
+.fullscreen-search-overlay #fullscreen-search-wrapper #fullscreen-searchform #fullscreen-search-input:focus {
+    border: none;
+    outline: none;
+}
+
+.fullscreen-search-overlay.fullscreen-search-overlay-show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fullscreen-search-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.94);
+    text-align: center;
+    transition: all .25s ease-in-out;
+}
+
+.animate-element,
+.effect-bg-leater,
+.fullscreen-search-overlay {
+    transform: translateZ(0);
+}
+
+.fullscreen-search-overlay {
+    z-index: 100;
+}
+
+.fullscreen-search-overlay .fullscreen-close:link,
+.fullscreen-search-overlay .fullscreen-close:visited {
+    color: #fff;
+}
+
+.fullscreen-search-overlay .fullscreen-close {
+    position: absolute;
+    right: 50px;
+    top: 70px;
+    font-size: 26px;
+    transition: transform ease-out .2s;
+    transform: rotate(0deg);
+}
+
+.fullscreen-search-overlay.fullscreen-search-overlay-show #fullscreen-search-wrapper {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.fullscreen-search-overlay #fullscreen-search-wrapper {
+    display: inline-block;
+    max-width: 1000px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 18px;
+    transform: scale(0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.search-trigger {
+    transition: color .2s ease-in-out;
+}
+
+/* Search Button */
+#search-button {
+    position: relative;
+    vertical-align: middle;
+    height: 50px;
+    width: 40px;
+    border: 0.7px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 1;
+    padding-right: 10px;
+    transition: all 400ms;
+    transform: rotate(0deg);
+}
+#search-button i {
+    color: white !important;
+    font-size: 20px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+#search-button:hover,
+.fullscreen-close:hover {
+    opacity: 0.6;
+    transform: rotate(180deg);
+    transition: all 400ms;
+}
+
+#fullscreen-search-input:focus {
+    box-shadow: 0px 3px 0px 0px rgba(255, 255, 255, 0.5) !important;
+}
